@@ -1,0 +1,195 @@
+[
+  {
+    "uri": "features/especificação/1- Criar_book.feature",
+    "id": "criar-book",
+    "keyword": "Funcionalidade",
+    "name": "Criar Book",
+    "description": "Como uma aplicação cliente\nDesejo criar um book\nPara que haja conteudo novo site",
+    "line": 5,
+    "comments": [
+      {
+        "value": "#utf-8",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "Ter credenciais de acesso Services",
+        "description": "",
+        "line": 11,
+        "type": "background"
+      },
+      {
+        "id": "criar-book;criar-um-novo-book",
+        "keyword": "Cenário",
+        "name": "Criar um novo book",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@post",
+            "line": 13
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "cadastrar um novo book no site.",
+            "line": 15,
+            "match": {
+              "location": "features/steps/services_steps.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "wrong number of arguments (given 6, expected 1) (ArgumentError)\n./features/steps/services_steps.rb:7:in `\"cadastrar um novo book no site.\"'\nfeatures/especificação/1- Criar_book.feature:15:in `Quando cadastrar um novo book no site.'",
+              "duration": 1558287642
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "o status code da resposta será 200",
+            "line": 16,
+            "match": {
+              "location": "features/steps/services_steps.rb:11"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/especificação/2 - Buscar_books.feature",
+    "id": "buscar-book-existente",
+    "keyword": "Funcionalidade",
+    "name": "Buscar Book existente",
+    "description": "Como uma aplicação cliente\nDesejo buscar um book\nPara que haja conteudo no novo site",
+    "line": 5,
+    "comments": [
+      {
+        "value": "#utf-8",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "Ter credenciais de acesso Services",
+        "description": "",
+        "line": 11,
+        "type": "background"
+      },
+      {
+        "id": "buscar-book-existente;buscar-um-book",
+        "keyword": "Cenário",
+        "name": "Buscar um book",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@get",
+            "line": 13
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "buscar um book pelo id '1' no site através do service",
+            "line": 15,
+            "match": {
+              "location": "features/steps/services_steps.rb:16"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "wrong number of arguments (given 6, expected 1) (ArgumentError)\n./features/steps/services_steps.rb:18:in `\"buscar um book pelo id {string} no site através do service\"'\nfeatures/especificação/2 - Buscar_books.feature:15:in `Quando buscar um book pelo id '1' no site através do service'",
+              "duration": 552383889
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "o status code da resposta será mensagem 200",
+            "line": 16,
+            "match": {
+              "location": "features/steps/services_steps.rb:22"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/especificação/3 - Alteracao_do_book.feature",
+    "id": "alterar-book",
+    "keyword": "Funcionalidade",
+    "name": "Alterar Book",
+    "description": "Eu como sistema intermediário\nQuero fazer a requisição de alteração de um livro\nPara corrigir um trecho do livro",
+    "line": 5,
+    "comments": [
+      {
+        "value": "#utf-8",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "Ter credenciais de acesso Services",
+        "description": "",
+        "line": 11,
+        "type": "background"
+      },
+      {
+        "id": "alterar-book;alterarção-em-um-book",
+        "keyword": "Cenário",
+        "name": "Alterarção em um book",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@put",
+            "line": 13
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "fizer a alteração em um livro para corrigir um trecho especifico",
+            "line": 15,
+            "output": [
+              "Excerpt antes de alterar:At imperdiet tempor nam dolores",
+              "Excerpt alterado para:Edição Especial do Dia das Mães"
+            ],
+            "match": {
+              "location": "features/steps/services_steps.rb:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 978138793
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "valido o codigo de resposta que será 200 para alteração esperado",
+            "line": 16,
+            "match": {
+              "location": "features/steps/services_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 69192159
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

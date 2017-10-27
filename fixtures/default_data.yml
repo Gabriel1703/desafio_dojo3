@@ -1,0 +1,25 @@
+criar_book:
+ ID: 201
+ Title: 'Livro Dom Casmurro'
+ Description: 'teste@inmetrics.com.br'
+ PageCount: 256
+ Excerpt: 'Sumário resumido'
+ PublishDate: '2017-06-15T13:00:00.549505+00:00'
+
+
+buscar_book:
+ ID: 1
+
+
+alterar_book:
+ ID: 1
+ #Title: 'Livro Dom Casmurro'
+ #Description: 'teste@inmetrics.com.br'
+ #PageCount: 256
+ Excerpt: 'Edição Especial do Dia das Mães'
+ #PublishDate: '2017-06-15T13:00:00.549505+00:00'
+ 
+
+
+
+
